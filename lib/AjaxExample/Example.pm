@@ -32,7 +32,7 @@ sub welcome_message {
     my $c = shift;
     
     # Render message from public file
-    my $path = $c->render_static('server_message.html');
+    my $path = $c->reply->static('server_message.html');
 }
 
 =head2 update_welcome_message()
